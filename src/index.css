@@ -2,17 +2,6 @@
 
 @import "tailwindcss";
 
-@theme {
-  --font-outfit: 'Outfit', sans-serif;
-  --color-neon-green: #39ff14;
-  --color-neon-cyan: #00fff5;
-  --color-neon-pink: #ff006e;
-  --color-neon-yellow: #ffe600;
-  --color-neon-purple: #b026ff;
-  --color-arena-bg: #0a0a1a;
-  --color-arena-card: #141428;
-  --color-arena-border: #252550;
-}
 
 * {
   margin: 0;

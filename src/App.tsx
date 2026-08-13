@@ -450,15 +450,15 @@ export default function App() {
       </div>
 
       {/* ─── BOTTOM - CHOICE BUTTONS ─── */}
-      <div className="relative z-10 w-full max-w-lg pb-2 sm:pb-4">
+      <div className="relative z-10 w-full max-w-4xl px-2 sm:px-3 pb-32 sm:pb-32 md:pb-36 lg:pb-40">
         {gameState === 'playing' ? (
-          <div className="flex justify-center gap-3 sm:gap-5">
+          <div className="flex justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-5">
             <ChoiceButton choice="snake" onSelect={makeChoice} disabled={false} keyHint="S" delay={0} />
             <ChoiceButton choice="water" onSelect={makeChoice} disabled={false} keyHint="W" delay={50} />
             <ChoiceButton choice="gun" onSelect={makeChoice} disabled={false} keyHint="G" delay={100} />
           </div>
         ) : (
-          <div className="flex justify-center gap-3 sm:gap-5 opacity-20 pointer-events-none">
+          <div className="flex justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-5 opacity-20 pointer-events-none">
             <ChoiceButton choice="snake" onSelect={() => {}} disabled={true} keyHint="S" />
             <ChoiceButton choice="water" onSelect={() => {}} disabled={true} keyHint="W" />
             <ChoiceButton choice="gun" onSelect={() => {}} disabled={true} keyHint="G" />
@@ -475,8 +475,8 @@ export default function App() {
       )}
 
       {/* COPYRIGHT FOOTER */}
-      <div className="absolute bottom-2 left-0 right-200 flex justify-center text-[10px] sm:text-xs text-white/30 font-medium tracking-wider pointer-events-none">
-        © 2026 Mayudin Rathod. All rights reserved.
+      <div className="fixed bottom-1 left-0 right-0 flex justify-center px-2 text-[9px] sm:text-[10px] md:text-xs text-white/40 font-medium tracking-wide pointer-events-none whitespace-nowrap overflow-hidden text-ellipsis">
+        <span>© 2026 Mayudin Rathod. All rights reserved.</span>
       </div>
     </div>
   );

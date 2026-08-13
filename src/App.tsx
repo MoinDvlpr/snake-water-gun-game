@@ -450,7 +450,7 @@ export default function App() {
       </div>
 
       {/* ─── BOTTOM - CHOICE BUTTONS ─── */}
-      <div className="relative z-10 w-full max-w-4xl px-2 sm:px-3 pb-32 sm:pb-32 md:pb-36 lg:pb-40">
+      <div className="relative z-10 w-full max-w-4xl px-2 sm:px-3 mb-16 sm:mb-12 md:mb-14">
         {gameState === 'playing' ? (
           <div className="flex justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-5">
             <ChoiceButton choice="snake" onSelect={makeChoice} disabled={false} keyHint="S" delay={0} />
